@@ -39,10 +39,10 @@ for repo in ${arrRepo[@]};do
     git checkout master
     node "${basedir}/pkg.js"
 
-    # git add bower.json
-    # git commit -m"add bower.json"
-    # git push
-    # echo "git push ${repo} done."
+    git add bower.json
+    git commit -m"add bower.json"
+    git push
+    echo "git push ${repo} done."
 
     echo ">> ${repo} bower done\n"
 

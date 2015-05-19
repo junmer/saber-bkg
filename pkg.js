@@ -34,4 +34,6 @@ var bowerPath = path.resolve(cwd, 'bower.json');
 
 var bowerPkg = extend({}, pkg, bosePkg);
 
+delete bowerPkg.scripts;
+
 require('fs').writeFileSync(bowerPath, JSON.stringify(bowerPkg, null, 2));
